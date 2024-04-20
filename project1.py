@@ -4,14 +4,13 @@
     Dice numbers from 1 to 6
     
     Basic Rules:
-        1. There will be three rounds
-        2. Each player will have their turn to roll the dice
-        3. The current player will role the dice
-        4. The system will ask the player for further roll
+        1. Each player will have their turn to roll the dice
+        2. The current player will roll the dice
+        3. The system will ask the player for further roll
             If yes, then the dice rolls and adds the score 
-            and if the dice is 1 then the turn is over and score becomes 0
-            If no, then for this round the turn for the player is over and has to wait for another round
-        5. Total score of each player is counted and then the highest score wins
+            and if the dice is 1 then the turn is over and the score becomes 0
+            If not, then for this round the turn for the player is over, and has to wait for another round
+        4. The total score of each player is counted and then the highest score wins
 
     Have Fun!!!
 '''
@@ -19,9 +18,9 @@ import random
 
 #function 4
 def output(highest_score,player_name):
-    '''This function accepts the index of highest score along with all players name
-        The criteria for draw is set to -1.
-        So if highest_scorer index is -1 then draw is printed
+    ''' This function accepts the index of the highest score along with all players name
+        The criteria for drawing is set to -1.
+        So if the highest_scorer index is -1 then the draw is printed
         else the name along with congratulation is printed 
       
         output(int,list) -> prints result
@@ -60,9 +59,9 @@ def winner_finder(players_score,players_no):
 
 #function 2
 def roll_checker(check):
-    #This functions checks if the input roll is valid or not
+    #This function checks if the input roll is valid or not
     '''
-        this function runs a loop until the player enters a valid response to the question and correspoding output is sent
+        this function runs a loop until the player enters a valid response to the question and corresponding output is sent
         1 for y/Y
         0 for n/N
 
