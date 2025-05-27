@@ -16,6 +16,8 @@
 '''
 import random
 
+print()
+
 #function 4
 def output(highest_score,player_name):
     ''' This function accepts the index of the highest score along with all players name
